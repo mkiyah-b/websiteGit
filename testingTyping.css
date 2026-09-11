@@ -1,0 +1,29 @@
+body {
+  font-family: monospace;
+  font-weight: 70;
+  font-size:20px;
+  padding:20px;
+  color:#000000;
+}
+
+.type {
+  color:#0000;
+  background:
+    linear-gradient(-90deg,#000000 3px,#0000 0) 10px 0,
+    linear-gradient(#000000 0 0) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b 1s infinite steps(1),   
+   t calc(var(--n)*.08s) steps(var(--n)) forwards;
+   word-break: break-all;
+}
+
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}

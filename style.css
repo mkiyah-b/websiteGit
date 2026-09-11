@@ -1,0 +1,23 @@
+html {
+    background-color: rgb(199, 237, 186);
+}
+
+#pic {
+    width: 180px;
+    position: absolute;
+    top: 10px;
+    left: 150px;
+}
+
+#drawing {
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    left: 330px;
+}
+
+a {
+    text-decoration: none;
+    color: darkolivegreen;
+}
+a:hover{color: red}
